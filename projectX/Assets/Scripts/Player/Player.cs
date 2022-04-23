@@ -4,11 +4,14 @@ using UnityEngine.UI;
 public class Player : MonoBehaviour
 {
     //player
+    [Header("SETTINGS")]
     [SerializeReference] private float forceJump;
+    [SerializeField] private ParticleSystem particleS;
     private bool isJump;
     private Rigidbody2D rig;
 
     //fuel
+    [Header("FUEL")]
     [SerializeField] private Text fuelGetTxt;
     [SerializeField] private Image fuelBar;
     [SerializeField] private float totalFuel;
@@ -17,6 +20,7 @@ public class Player : MonoBehaviour
     private float currentFuel;
     void Start()
     {
+        particleS.Play();
         currentFuel = totalFuel;
         rig = GetComponent<Rigidbody2D>();
     }
@@ -44,6 +48,7 @@ public class Player : MonoBehaviour
     {
         if (isJump && currentFuel > 0)
         {
+            particleS.Play();
             rig.AddForce(Vector2.up * forceJump * Time.fixedDeltaTime, ForceMode2D.Impulse);
         }
     }

@@ -14,5 +14,10 @@ public class FuelCollider : MonoBehaviour
             player.AddFuel(fuel);
             Destroy(gameObject);
         }
+
+        if (collision.CompareTag("End"))
+        {
+            Destroy(gameObject);
+        }
     }
 }
