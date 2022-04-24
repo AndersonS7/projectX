@@ -3,12 +3,39 @@ using UnityEngine;
 
 public class MenuControl : MonoBehaviour
 {
-    [SerializeField] private GameObject panelGameOver;
+    [SerializeField] private GameObject panelGameOver; // mudar para passar esse objeto no parâmetro da função
 
-    public void Restart()
+    //menu principal
+    public void LoadScene(string scene)
+    {
+        SceneManager.LoadScene(scene);
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
+    // menus secundários
+    public void Restart(string scene)
     {
         Time.timeScale = 1;
         panelGameOver.SetActive(false);
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene(scene);
+    }
+
+    public void ActiveInfo(GameObject panelInfo)
+    {
+        if (!panelInfo.activeSelf)
+        {
+            panelInfo.SetActive(true);
+        }
+        else
+        {
+            panelInfo.SetActive(false);
+        }
     }
 }
+
+
+// 3418BE
