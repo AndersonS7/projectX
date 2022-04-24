@@ -10,6 +10,8 @@ public class Scenary : MonoBehaviour
 
     private float timeCount;
 
+    public float TimeCountLimit { get => timeCountLimit; set => timeCountLimit = value; }
+
     void Start()
     {
         CreateWall(points, 2);
@@ -18,7 +20,7 @@ public class Scenary : MonoBehaviour
     void Update()
     {
         timeCount += Time.deltaTime;
-        if (timeCount >= timeCountLimit)
+        if (timeCount >= TimeCountLimit)
         {
             CreateWall(points, 2);
             timeCount = 0;

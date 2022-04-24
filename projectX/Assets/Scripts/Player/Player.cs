@@ -18,6 +18,7 @@ public class Player : MonoBehaviour
     [SerializeField] private float decrementValue;
 
     private float currentFuel;
+
     void Start()
     {
         particleS.Play();
@@ -73,10 +74,12 @@ public class Player : MonoBehaviour
         if (currentFuel + value < totalFuel)
         {
             currentFuel += value;
+            fuelBar.fillAmount = currentFuel / totalFuel;
         }
         else
         {
             currentFuel = totalFuel;
+            fuelBar.fillAmount = currentFuel / totalFuel;
         }
     }
 }

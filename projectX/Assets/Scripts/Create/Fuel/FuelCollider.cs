@@ -2,6 +2,7 @@ using UnityEngine;
 public class FuelCollider : MonoBehaviour
 {
     private Player player;
+
     void Start()
     {
         player = FindObjectOfType<Player>();
@@ -10,8 +11,7 @@ public class FuelCollider : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            int fuel = Random.Range(5, 10);
-            player.AddFuel(fuel);
+            player.AddFuel(Random.Range(5, 10));
             Destroy(gameObject);
         }
 

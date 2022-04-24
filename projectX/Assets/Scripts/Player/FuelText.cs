@@ -5,7 +5,9 @@ public class FuelText : MonoBehaviour
     [SerializeField] private Transform point;
     [SerializeField] private float speed;
     [SerializeField] private float countLimit;
+
     private float timeCount;
+
     void Start()
     {
         timeCount = 0;
@@ -25,3 +27,7 @@ public class FuelText : MonoBehaviour
         }
     }
 }
+
+/*
+ESSE CÓDIGO SÓ É CHAMADO QUANDO O OBJETO ESTIVER ATIVO EM CENA
+ */
