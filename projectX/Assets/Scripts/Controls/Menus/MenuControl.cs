@@ -28,6 +28,8 @@ public class MenuControl : MonoBehaviour
     {
         if (!panelInfo.activeSelf)
         {
+            int index = PlayerPrefs.GetInt("index");
+            panelInfo.GetComponentInChildren<GetData>().UpdateInfo(index);
             panelInfo.SetActive(true);
         }
         else
@@ -36,6 +38,3 @@ public class MenuControl : MonoBehaviour
         }
     }
 }
-
-
-// 3418BE
