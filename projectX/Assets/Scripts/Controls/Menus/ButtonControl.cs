@@ -6,11 +6,13 @@ using UnityEngine.UI;
 public class ButtonControl : MonoBehaviour
 {
     [SerializeField] private List<Button> btnList;
-
+    
+    private GameObject[] arrayBtn;
     public List<int> listNumAux = new List<int>();
 
     void Start()
     {
+        GetButton();//pega todos os botões que estão com a tag "Btn" e armazena dentro de btnList
         LockeInit(); //trava todos os botões ao iniciar.
         LockControl(); //controla qual item vai ser liberado.
         UnlockItems(); //destrava os botões de acordo com o número selecionado.
@@ -58,6 +60,11 @@ public class ButtonControl : MonoBehaviour
                 SaveGame();
             }
         }
+        else
+        {
+            //isso carrega os dados quando o jogador vem do Menu para o almanac
+            LoadGame();
+        }
     }
     private void LockeInit()
     {
@@ -88,6 +95,15 @@ public class ButtonControl : MonoBehaviour
             {
                 btnList[i].GetComponentInChildren<Text>().text = "X";
             }
+        }
+    }
+    private void GetButton()
+    {
+        arrayBtn = GameObject.FindGameObjectsWithTag("Btn");
+
+        foreach (var btn in arrayBtn)
+        {
+            btnList.Add(btn.GetComponent<Button>());
         }
     }
 
