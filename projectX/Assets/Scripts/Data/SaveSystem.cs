@@ -27,12 +27,12 @@ public static class SaveSystem
             FileStream stream = new FileStream(path, FileMode.Open);
 
             GameData data = binary.Deserialize(stream) as GameData;
+            stream.Close();
 
             return data;
         }
         else
         {
-            Debug.Log("Arquivo não encontrado!");
             return null;
         }
     }

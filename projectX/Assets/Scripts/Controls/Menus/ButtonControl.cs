@@ -7,41 +7,74 @@ public class ButtonControl : MonoBehaviour
 {
     [SerializeField] private List<Button> btnList;
 
-    public int[] numList; //guarda os itens que foram sorteados
-
-    public int[] NumList { get => numList; set => numList = value; }
+    public List<int> listNumAux = new List<int>();
 
     void Start()
     {
-        
-        if (PlayerPrefs.GetInt("index") > -1)
-        {
-            
-        }
-        else
-        {
-            numList = new int[0];
-        }
+        LockeInit(); //trava todos os botões ao iniciar.
+        LockControl(); //controla qual item vai ser liberado.
+        UnlockItems(); //destrava os botões de acordo com o número selecionado.
+    }
 
+    private void LockControl()
+    {
+        if (PlayerPrefs.GetInt("number") == 1)
+        {
+
+            LoadGame();
+
+            if (listNumAux.Count != 0)
+            {
+                if (listNumAux.Count < btnList.Count)
+                {
+                    int num = Random.Range(0, btnList.Count);
+
+                    if (listNumAux.Contains(num))
+                    {
+                        for (int i = 0; listNumAux.Contains(num); i++)
+                        {
+                            num = Random.Range(0, btnList.Count);
+                        }
+                        
+                        listNumAux.Add(num);
+                    }
+                    else
+                    {
+                        listNumAux.Add(num);
+                    }
+
+                    SaveGame();
+                }
+                else
+                {
+                    Debug.Log("Todos os itens foram desbloqueados");
+                }
+            }
+            else //se for a primeira vez | OK
+            {
+                int num = Random.Range(0, btnList.Count);
+                listNumAux.Add(num);
+
+                SaveGame();
+            }
+        }
+    }
+    private void LockeInit()
+    {
+        //de início vai bloquear todos os botões
         for (int i = 0; i < btnList.Count; i++)
         {
             btnList[i].enabled = false;
         }
     }
-
-    void Update()
+    private void UnlockItems()
     {
-        CheckList();
-    }
-
-    private void CheckList()
-    {
-        for (int i = 0; i < numList.Length; i++)
+        for (int i = 0; i < listNumAux.Count; i++)
         {
             //os números dentro de numList não pode ser maior que o tamanho total de btnList (btnList.Count)
-            if (numList[i] <= btnList.Count)
+            if (listNumAux[i] <= btnList.Count)
             {
-                btnList[numList[i]].enabled = true;
+                btnList[listNumAux[i]].enabled = true;
             }
             else
             {
@@ -58,6 +91,7 @@ public class ButtonControl : MonoBehaviour
         }
     }
 
+    #region SAVE GAME
     // controle de save
     public void SaveGame()
     {
@@ -68,11 +102,17 @@ public class ButtonControl : MonoBehaviour
     {
         GameData data = SaveSystem.LoadGame();
 
-        numList = new int[data.numList.Length];
-
-        for (int i = 0; i < numList.Length; i++)
+        if (data != null) //só pega a lista se ela já tiver sido salva uma vez
         {
-            numList[i] = data.numList[i];
+            foreach (var item in data.listTeste)
+            {
+                listNumAux.Add(item);
+            }
+        }
+        else //quando o jogo é iniciado a primeira vez
+        {
+            Debug.Log("Arquivo não encontrado");
         }
     }
+    #endregion
 }

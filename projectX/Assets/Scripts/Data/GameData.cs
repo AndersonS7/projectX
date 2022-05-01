@@ -1,16 +1,16 @@
+using System.Collections.Generic;
 
 [System.Serializable]
 public class GameData
 {
-    public int[] numList;
+    public List<int> listTeste;
 
-    public GameData(ButtonControl value)
+    public GameData(ButtonControl data)
     {
-        numList = new int[value.NumList.Length];
-
-        for (int i = 0; i < numList.Length; i++)
+        listTeste = new List<int>();
+        foreach (var item in data.listNumAux)
         {
-            numList[i] = value.NumList[i];
+            listTeste.Add(item);
         }
     }
 }

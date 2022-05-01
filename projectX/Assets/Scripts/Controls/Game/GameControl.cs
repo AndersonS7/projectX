@@ -12,7 +12,10 @@ public class GameControl : MonoBehaviour
 
     void Start()
     {
-        PlayerPrefs.DeleteAll(); // caminho percistente => C:\Users\ander\AppData\LocalLow\DefaultCompany\projectX
+        PlayerPrefs.DeleteAll();//path => C:\Users\ander\AppData\LocalLow\DefaultCompany\projectX
+        PlayerPrefs.SetInt("number", 0);
+        PlayerPrefs.Save();
+
         countProgress = 0;
         timeCount = 0;
     }
@@ -26,9 +29,10 @@ public class GameControl : MonoBehaviour
     // quando o player passa de determinado ponto, ele gera um número que é usado bara desbloquear o elemnto
     public void UnlockObject()
     {
-        if (countProgress > 10)
+        if (countProgress > 2)
         {
-            PlayerPrefs.SetInt("index", Random.Range(0, 4));
+            PlayerPrefs.SetInt("number", 1);
+            PlayerPrefs.Save();
         }
     }
 
