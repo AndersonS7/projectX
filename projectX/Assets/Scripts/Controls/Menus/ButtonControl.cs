@@ -6,9 +6,9 @@ using UnityEngine.UI;
 public class ButtonControl : MonoBehaviour
 {
     [SerializeField] private List<Button> btnList;
-    
-    private GameObject[] arrayBtn;
+
     public List<int> listNumAux = new List<int>();
+    private GameObject[] arrayBtn;
 
     void Start()
     {
@@ -22,12 +22,46 @@ public class ButtonControl : MonoBehaviour
     {
         if (PlayerPrefs.GetInt("number") == 1)
         {
-
             LoadGame();
 
             if (listNumAux.Count != 0)
             {
-                if (listNumAux.Count < btnList.Count)
+                int totalNumber = PlayerPrefs.GetInt("ghostItems");
+
+                for (int x = 0; x < totalNumber; x++)
+                {
+                    if (listNumAux.Count < btnList.Count)
+                    {
+                        int num = Random.Range(0, btnList.Count);
+
+                        if (listNumAux.Contains(num))
+                        {
+                            for (int i = 0; listNumAux.Contains(num); i++)
+                            {
+                                num = Random.Range(0, btnList.Count);
+                            }
+
+                            listNumAux.Add(num);
+                        }
+                        else
+                        {
+                            listNumAux.Add(num);
+                        }
+
+                        SaveGame();
+                    }
+                    else
+                    {
+                        Debug.Log("Todos os itens foram desbloqueados");
+                    }
+                }
+
+            }
+            else //se for a primeira vez | OK
+            {
+                int totalNumber = PlayerPrefs.GetInt("ghostItems");
+
+                for (int x = 0; x < totalNumber; x++)
                 {
                     int num = Random.Range(0, btnList.Count);
 
@@ -37,7 +71,7 @@ public class ButtonControl : MonoBehaviour
                         {
                             num = Random.Range(0, btnList.Count);
                         }
-                        
+
                         listNumAux.Add(num);
                     }
                     else
@@ -47,22 +81,14 @@ public class ButtonControl : MonoBehaviour
 
                     SaveGame();
                 }
-                else
-                {
-                    Debug.Log("Todos os itens foram desbloqueados");
-                }
             }
-            else //se for a primeira vez | OK
-            {
-                int num = Random.Range(0, btnList.Count);
-                listNumAux.Add(num);
 
-                SaveGame();
-            }
+            PlayerPrefs.SetInt("ghostItems", 0);
+            PlayerPrefs.Save();
         }
         else
         {
-            //isso carrega os dados quando o jogador vem do Menu para o almanac
+            //isso carrega os dados quando o jogador vem do Menu para o almanac (os dados salvos)
             LoadGame();
         }
     }

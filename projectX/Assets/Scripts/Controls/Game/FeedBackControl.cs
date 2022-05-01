@@ -10,7 +10,6 @@ public class FeedBackControl : MonoBehaviour
     private float timeCount;
 
     [HideInInspector] public bool isActive;
-    [HideInInspector] public string statusItem;
 
     void Start()
     {
@@ -29,13 +28,12 @@ public class FeedBackControl : MonoBehaviour
         if (isActive)
         {
             timeCount += Time.deltaTime;
-            feedbackTxt.GetComponent<Text>().text = $"Item ({statusItem}) desbloqueado!";
+            feedbackTxt.GetComponent<Text>().text = $"Um item foi desbloqueado!";
             feedbackTxt.gameObject.SetActive(true);
 
             if (timeCount >= 2.5f)
             {
                 isActive = false;
-                statusItem = "";
                 timeCount = 0;
                 feedbackTxt.gameObject.SetActive(false);
             }
