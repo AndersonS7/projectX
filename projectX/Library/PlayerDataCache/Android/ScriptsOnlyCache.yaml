@@ -4,6 +4,7 @@ ScriptsOnlyBuild:
     - ButtonControl
     - Data
     - DetectColider
+    - FeedBackControl
     - Fuel
     - FuelCollider
     - FuelText
@@ -13,6 +14,7 @@ ScriptsOnlyBuild:
     - Player
     - SaveIndex
     - Scenary
+    - ValueControl
     - Wall
     Cinemachine.dll:
     - Cinemachine.CinemachineBrain
@@ -23,6 +25,7 @@ ScriptsOnlyBuild:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
+    - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridBrush
     - UnityEditor.Tilemaps.GridBrushEditor
@@ -76,37 +79,37 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1520}
     - Class: 114
-      Script: {instanceID: 1654}
+      Script: {instanceID: 1656}
     - Class: 114
-      Script: {instanceID: 2308}
+      Script: {instanceID: 2310}
     - Class: 114
-      Script: {instanceID: 2322}
+      Script: {instanceID: 2324}
     - Class: 114
-      Script: {instanceID: 2768}
+      Script: {instanceID: 2770}
     - Class: 114
-      Script: {instanceID: 2960}
+      Script: {instanceID: 2962}
     - Class: 114
-      Script: {instanceID: 3208}
+      Script: {instanceID: 3210}
     - Class: 114
-      Script: {instanceID: 3470}
+      Script: {instanceID: 3472}
     - Class: 114
-      Script: {instanceID: 3482}
+      Script: {instanceID: 3484}
     - Class: 114
-      Script: {instanceID: 3602}
-    - Class: 114
-      Script: {instanceID: 4030}
+      Script: {instanceID: 3606}
     - Class: 114
       Script: {instanceID: 4036}
     - Class: 114
-      Script: {instanceID: 4378}
+      Script: {instanceID: 4042}
     - Class: 114
-      Script: {instanceID: 4722}
+      Script: {instanceID: 4386}
     - Class: 114
-      Script: {instanceID: 4936}
+      Script: {instanceID: 4730}
     - Class: 114
-      Script: {instanceID: 5356}
+      Script: {instanceID: 4944}
     - Class: 114
-      Script: {instanceID: 6030}
+      Script: {instanceID: 5364}
+    - Class: 114
+      Script: {instanceID: 6040}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -143,21 +146,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1520}
     - Class: 114
-      Script: {instanceID: 1654}
+      Script: {instanceID: 1656}
     - Class: 114
-      Script: {instanceID: 2308}
+      Script: {instanceID: 2310}
     - Class: 114
-      Script: {instanceID: 2768}
+      Script: {instanceID: 2770}
     - Class: 114
-      Script: {instanceID: 2960}
+      Script: {instanceID: 2962}
     - Class: 114
-      Script: {instanceID: 3208}
+      Script: {instanceID: 3210}
     - Class: 114
-      Script: {instanceID: 3470}
+      Script: {instanceID: 3472}
     - Class: 114
-      Script: {instanceID: 3602}
+      Script: {instanceID: 3572}
     - Class: 114
-      Script: {instanceID: 4030}
+      Script: {instanceID: 3606}
+    - Class: 114
+      Script: {instanceID: 4036}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -200,43 +205,45 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1520}
     - Class: 114
-      Script: {instanceID: 1654}
+      Script: {instanceID: 1656}
     - Class: 114
-      Script: {instanceID: 2024}
+      Script: {instanceID: 2026}
     - Class: 114
-      Script: {instanceID: 2050}
+      Script: {instanceID: 2052}
     - Class: 114
-      Script: {instanceID: 2308}
+      Script: {instanceID: 2310}
     - Class: 114
-      Script: {instanceID: 2436}
+      Script: {instanceID: 2438}
     - Class: 114
-      Script: {instanceID: 2716}
+      Script: {instanceID: 2718}
     - Class: 114
-      Script: {instanceID: 2768}
+      Script: {instanceID: 2770}
     - Class: 114
-      Script: {instanceID: 2856}
+      Script: {instanceID: 2858}
     - Class: 114
-      Script: {instanceID: 2960}
+      Script: {instanceID: 2962}
     - Class: 114
-      Script: {instanceID: 3054}
+      Script: {instanceID: 3056}
     - Class: 114
-      Script: {instanceID: 3208}
+      Script: {instanceID: 3210}
     - Class: 114
-      Script: {instanceID: 3470}
+      Script: {instanceID: 3472}
     - Class: 114
-      Script: {instanceID: 3600}
+      Script: {instanceID: 3526}
     - Class: 114
-      Script: {instanceID: 3602}
+      Script: {instanceID: 3604}
     - Class: 114
-      Script: {instanceID: 3758}
+      Script: {instanceID: 3606}
     - Class: 114
-      Script: {instanceID: 3774}
+      Script: {instanceID: 3764}
     - Class: 114
-      Script: {instanceID: 4182}
+      Script: {instanceID: 3780}
     - Class: 114
-      Script: {instanceID: 6090}
+      Script: {instanceID: 4188}
     - Class: 114
-      Script: {instanceID: 6162}
+      Script: {instanceID: 6100}
+    - Class: 114
+      Script: {instanceID: 6172}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -388,7 +395,7 @@ ScriptsOnlyBuild:
     className: FuelCollider
   - hash:
       serializedVersion: 2
-      Hash: d18ec0cf94c58b8de3ee7dd551965b9b
+      Hash: ab7e59a41f7cc61bda5f8fecb81778c6
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameControl
@@ -646,6 +653,12 @@ ScriptsOnlyBuild:
     className: MarkerTrack
   - hash:
       serializedVersion: 2
+      Hash: f2ae4bf9fc95f4cc6120894692085db7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FeedBackControl
+  - hash:
+      serializedVersion: 2
       Hash: 23066ceca838af0cf02e00e3cf5155c1
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
@@ -658,10 +671,10 @@ ScriptsOnlyBuild:
     className: BeforeAfterTestCommandState
   - hash:
       serializedVersion: 2
-      Hash: 0fd6822f6177297bd0eb4d83cc7a9030
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: ToggleGroup
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ValueControl
   - hash:
       serializedVersion: 2
       Hash: b639d97cb780d0d99a2bfb3ad1935732
@@ -686,6 +699,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Button
+  - hash:
+      serializedVersion: 2
+      Hash: 0fd6822f6177297bd0eb4d83cc7a9030
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: ToggleGroup
   - hash:
       serializedVersion: 2
       Hash: 349d08daa6108b9a28f8c38fd40ce96f
@@ -1030,7 +1049,7 @@ ScriptsOnlyBuild:
     className: TMP_SubMeshUI
   - hash:
       serializedVersion: 2
-      Hash: b0c8826f836a5fed526063044caa3973
+      Hash: a4fba4078dfb4034a9656a38300499d1
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ButtonControl
@@ -1064,6 +1083,12 @@ ScriptsOnlyBuild:
     assemblyName: Cinemachine.dll
     namespaceName: 
     className: CinemachineRecomposer
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: IncrementItemsUnlock
   - hash:
       serializedVersion: 2
       Hash: b5c3dbcb94925c8b595ad16a62b44788
@@ -1141,4 +1166,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Menu.unity
   - Assets/Scenes/Scene.unity
   - Assets/Scenes/Almanac.unity
-  playerPath: C:/zgames/A_apks/survival.apk
+  playerPath: C:/zgames/A_apks/flip.apk
