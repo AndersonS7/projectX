@@ -9,10 +9,12 @@ public class GameControl : MonoBehaviour
     [SerializeField] private Image barProgressItems;
 
     private float currentBarItems;
-    private float totalBarItems;
     private int countProgress;
     private float timeCount;
 
+    [Tooltip("Controla quanto tempo o player precisa percorrer para desbloquear o item")]
+    public float totalBarItems;
+    
     private FeedBackControl feedback;
 
     void Start()
@@ -22,7 +24,7 @@ public class GameControl : MonoBehaviour
         PlayerPrefs.SetInt("number", 0);
         PlayerPrefs.Save();
 
-        totalBarItems = 5;
+        //totalBarItems = 5;
         barProgressItems.fillAmount = 0;
         feedback = GetComponent<FeedBackControl>();
         countProgress = 0;
