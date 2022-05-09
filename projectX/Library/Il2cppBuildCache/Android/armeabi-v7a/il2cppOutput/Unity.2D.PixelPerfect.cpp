@@ -27,6 +27,8 @@ struct InterfaceFuncInvoker0
 struct CharU5BU5D_t7B7FC5BC8091AA3B9CB0B29CDD80B5EE9254AA34;
 // UnityEngine.Camera
 struct Camera_tC44E094BAB53AFC8A014C6F9CFCE11F4FC38006C;
+// UnityEngine.U2D.CinemachinePixelPerfect
+struct CinemachinePixelPerfect_t18A5902325EFE9EAB86D12809C3E672555EAA6F1;
 // UnityEngine.Component
 struct Component_t62FBC8D2420DA4BE9037AFE430740F6B3EECA684;
 // UnityEngine.U2D.IPixelPerfectCamera
@@ -60,6 +62,7 @@ IL2CPP_EXTERN_C RuntimeClass* Object_tF2F3778131EFF286AF62B7B013A170F95A91571A_i
 IL2CPP_EXTERN_C RuntimeClass* PixelPerfectCameraInternal_t95E6E3E3BDA1D90E9F4489ED6B43D1673E0818AB_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* PixelPerfectCamera_tAEEA2988EBDE91F2C7D260CDA6B65FB24261CFE8_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C String_t* _stringLiteral69D2BC13326043EFBE8498680B311F3B34E06698;
+IL2CPP_EXTERN_C String_t* _stringLiteral6B44A7675031FCAC57E28AD1002F65360C76AFF2;
 IL2CPP_EXTERN_C String_t* _stringLiteral6E3C394542AFDC0953291817DE5BAA9A9329CF27;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisCamera_tC44E094BAB53AFC8A014C6F9CFCE11F4FC38006C_mE17146EF5B0D8E9F9D2D2D94567BF211AD00D320_RuntimeMethod_var;
 
@@ -1155,6 +1158,15 @@ public:
 };
 
 
+// UnityEngine.U2D.CinemachinePixelPerfect
+struct CinemachinePixelPerfect_t18A5902325EFE9EAB86D12809C3E672555EAA6F1  : public MonoBehaviour_t37A501200D970A8257124B0EAE00A0FF3DDC354A
+{
+public:
+
+public:
+};
+
+
 // UnityEngine.U2D.PixelPerfectCamera
 struct PixelPerfectCamera_tAEEA2988EBDE91F2C7D260CDA6B65FB24261CFE8  : public MonoBehaviour_t37A501200D970A8257124B0EAE00A0FF3DDC354A
 {
@@ -1282,6 +1294,10 @@ public:
 // !!0 UnityEngine.Component::GetComponent<System.Object>()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * Component_GetComponent_TisRuntimeObject_m69D9C576D6DD024C709E29EEADBC8041299A3AA7_gshared (Component_t62FBC8D2420DA4BE9037AFE430740F6B3EECA684 * __this, const RuntimeMethod* method);
 
+// System.Void UnityEngine.Debug::LogError(System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_LogError_m8850D65592770A364D494025FF3A73E8D4D70485 (RuntimeObject * ___message0, const RuntimeMethod* method);
+// System.Void UnityEngine.MonoBehaviour::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonoBehaviour__ctor_mC0995D847F6A95B1A553652636C38A2AA8B13BED (MonoBehaviour_t37A501200D970A8257124B0EAE00A0FF3DDC354A * __this, const RuntimeMethod* method);
 // System.Single UnityEngine.U2D.PixelPerfectCameraInternal::CorrectCinemachineOrthoSize(System.Single)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float PixelPerfectCameraInternal_CorrectCinemachineOrthoSize_mCE913421BC4294451DC3869F2EB052D3B3802ED1 (PixelPerfectCameraInternal_t95E6E3E3BDA1D90E9F4489ED6B43D1673E0818AB * __this, float ___targetOrthoSize0, const RuntimeMethod* method);
 // UnityEngine.Transform UnityEngine.Component::get_transform()
@@ -1371,8 +1387,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Rect_t7D9187DB6339DBA5741C09B6CCEF2F54F196687
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Camera_ResetAspect_mC80AD4BC18EA0E1E05F9295B58B6E7A8DB9072C0 (Camera_tC44E094BAB53AFC8A014C6F9CFCE11F4FC38006C * __this, const RuntimeMethod* method);
 // System.Void UnityEngine.Camera::ResetWorldToCameraMatrix()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Camera_ResetWorldToCameraMatrix_mE1FBF18A65E9B66FA0609D8D3A8A13052772C9B7 (Camera_tC44E094BAB53AFC8A014C6F9CFCE11F4FC38006C * __this, const RuntimeMethod* method);
-// System.Void UnityEngine.MonoBehaviour::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonoBehaviour__ctor_mC0995D847F6A95B1A553652636C38A2AA8B13BED (MonoBehaviour_t37A501200D970A8257124B0EAE00A0FF3DDC354A * __this, const RuntimeMethod* method);
 // System.Void System.Object::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_m88880E0413421D13FD95325EDCE231707CE1F405 (RuntimeObject * __this, const RuntimeMethod* method);
 // System.Int32 System.Math::Min(System.Int32,System.Int32)
@@ -1400,6 +1414,40 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Mathf_RoundToInt_m56850BDF60FF9E3441C
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void UnityEngine.U2D.CinemachinePixelPerfect::OnEnable()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CinemachinePixelPerfect_OnEnable_m0E489FAB7721E805922D3593D76BCCFAFABD98D4 (CinemachinePixelPerfect_t18A5902325EFE9EAB86D12809C3E672555EAA6F1 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_tEB68BCBEB8EFD60F8043C67146DC05E7F50F374B_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral6B44A7675031FCAC57E28AD1002F65360C76AFF2);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// Debug.LogError("CinemachinePixelPerfect is now deprecated and doesn't function properly. Instead, use the one from Cinemachine v2.4.0 or newer.");
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_tEB68BCBEB8EFD60F8043C67146DC05E7F50F374B_il2cpp_TypeInfo_var);
+		Debug_LogError_m8850D65592770A364D494025FF3A73E8D4D70485(_stringLiteral6B44A7675031FCAC57E28AD1002F65360C76AFF2, /*hidden argument*/NULL);
+		// }
+		return;
+	}
+}
+// System.Void UnityEngine.U2D.CinemachinePixelPerfect::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CinemachinePixelPerfect__ctor_mBE4888A0C64FE6B3D47E0688B55695C4F69C0E14 (CinemachinePixelPerfect_t18A5902325EFE9EAB86D12809C3E672555EAA6F1 * __this, const RuntimeMethod* method)
+{
+	{
+		MonoBehaviour__ctor_mC0995D847F6A95B1A553652636C38A2AA8B13BED(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
@@ -2391,43 +2439,43 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PixelPerfectCameraInternal_CalculateCame
 		RuntimeObject* L_2 = __this->get_m_Component_0();
 		NullCheck(L_2);
 		int32_t L_3;
-		L_3 = InterfaceFuncInvoker0< int32_t >::Invoke(1 /* System.Int32 UnityEngine.U2D.IPixelPerfectCamera::get_refResolutionX() */, IPixelPerfectCamera_t9F0A1326B7A342C5BDF45EB98760E0E380CEEAB7_il2cpp_TypeInfo_var, L_2);
+		L_3 = InterfaceFuncInvoker0< int32_t >::Invoke(2 /* System.Int32 UnityEngine.U2D.IPixelPerfectCamera::get_refResolutionX() */, IPixelPerfectCamera_t9F0A1326B7A342C5BDF45EB98760E0E380CEEAB7_il2cpp_TypeInfo_var, L_2);
 		V_1 = L_3;
 		// int refResolutionY = m_Component.refResolutionY;
 		RuntimeObject* L_4 = __this->get_m_Component_0();
 		NullCheck(L_4);
 		int32_t L_5;
-		L_5 = InterfaceFuncInvoker0< int32_t >::Invoke(2 /* System.Int32 UnityEngine.U2D.IPixelPerfectCamera::get_refResolutionY() */, IPixelPerfectCamera_t9F0A1326B7A342C5BDF45EB98760E0E380CEEAB7_il2cpp_TypeInfo_var, L_4);
+		L_5 = InterfaceFuncInvoker0< int32_t >::Invoke(4 /* System.Int32 UnityEngine.U2D.IPixelPerfectCamera::get_refResolutionY() */, IPixelPerfectCamera_t9F0A1326B7A342C5BDF45EB98760E0E380CEEAB7_il2cpp_TypeInfo_var, L_4);
 		V_2 = L_5;
 		// bool upscaleRT = m_Component.upscaleRT;
 		RuntimeObject* L_6 = __this->get_m_Component_0();
 		NullCheck(L_6);
 		bool L_7;
-		L_7 = InterfaceFuncInvoker0< bool >::Invoke(3 /* System.Boolean UnityEngine.U2D.IPixelPerfectCamera::get_upscaleRT() */, IPixelPerfectCamera_t9F0A1326B7A342C5BDF45EB98760E0E380CEEAB7_il2cpp_TypeInfo_var, L_6);
+		L_7 = InterfaceFuncInvoker0< bool >::Invoke(6 /* System.Boolean UnityEngine.U2D.IPixelPerfectCamera::get_upscaleRT() */, IPixelPerfectCamera_t9F0A1326B7A342C5BDF45EB98760E0E380CEEAB7_il2cpp_TypeInfo_var, L_6);
 		V_3 = L_7;
 		// bool pixelSnapping = m_Component.pixelSnapping;
 		RuntimeObject* L_8 = __this->get_m_Component_0();
 		NullCheck(L_8);
 		bool L_9;
-		L_9 = InterfaceFuncInvoker0< bool >::Invoke(4 /* System.Boolean UnityEngine.U2D.IPixelPerfectCamera::get_pixelSnapping() */, IPixelPerfectCamera_t9F0A1326B7A342C5BDF45EB98760E0E380CEEAB7_il2cpp_TypeInfo_var, L_8);
+		L_9 = InterfaceFuncInvoker0< bool >::Invoke(8 /* System.Boolean UnityEngine.U2D.IPixelPerfectCamera::get_pixelSnapping() */, IPixelPerfectCamera_t9F0A1326B7A342C5BDF45EB98760E0E380CEEAB7_il2cpp_TypeInfo_var, L_8);
 		V_4 = L_9;
 		// bool cropFrameX = m_Component.cropFrameX;
 		RuntimeObject* L_10 = __this->get_m_Component_0();
 		NullCheck(L_10);
 		bool L_11;
-		L_11 = InterfaceFuncInvoker0< bool >::Invoke(5 /* System.Boolean UnityEngine.U2D.IPixelPerfectCamera::get_cropFrameX() */, IPixelPerfectCamera_t9F0A1326B7A342C5BDF45EB98760E0E380CEEAB7_il2cpp_TypeInfo_var, L_10);
+		L_11 = InterfaceFuncInvoker0< bool >::Invoke(10 /* System.Boolean UnityEngine.U2D.IPixelPerfectCamera::get_cropFrameX() */, IPixelPerfectCamera_t9F0A1326B7A342C5BDF45EB98760E0E380CEEAB7_il2cpp_TypeInfo_var, L_10);
 		V_5 = L_11;
 		// bool cropFrameY = m_Component.cropFrameY;
 		RuntimeObject* L_12 = __this->get_m_Component_0();
 		NullCheck(L_12);
 		bool L_13;
-		L_13 = InterfaceFuncInvoker0< bool >::Invoke(6 /* System.Boolean UnityEngine.U2D.IPixelPerfectCamera::get_cropFrameY() */, IPixelPerfectCamera_t9F0A1326B7A342C5BDF45EB98760E0E380CEEAB7_il2cpp_TypeInfo_var, L_12);
+		L_13 = InterfaceFuncInvoker0< bool >::Invoke(12 /* System.Boolean UnityEngine.U2D.IPixelPerfectCamera::get_cropFrameY() */, IPixelPerfectCamera_t9F0A1326B7A342C5BDF45EB98760E0E380CEEAB7_il2cpp_TypeInfo_var, L_12);
 		V_6 = L_13;
 		// bool stretchFill = m_Component.stretchFill;
 		RuntimeObject* L_14 = __this->get_m_Component_0();
 		NullCheck(L_14);
 		bool L_15;
-		L_15 = InterfaceFuncInvoker0< bool >::Invoke(7 /* System.Boolean UnityEngine.U2D.IPixelPerfectCamera::get_stretchFill() */, IPixelPerfectCamera_t9F0A1326B7A342C5BDF45EB98760E0E380CEEAB7_il2cpp_TypeInfo_var, L_14);
+		L_15 = InterfaceFuncInvoker0< bool >::Invoke(14 /* System.Boolean UnityEngine.U2D.IPixelPerfectCamera::get_stretchFill() */, IPixelPerfectCamera_t9F0A1326B7A342C5BDF45EB98760E0E380CEEAB7_il2cpp_TypeInfo_var, L_14);
 		V_7 = L_15;
 		// cropFrameXAndY = cropFrameY && cropFrameX;
 		bool L_16 = V_6;
@@ -2987,7 +3035,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float PixelPerfectCameraInternal_CorrectCinem
 		RuntimeObject* L_0 = __this->get_m_Component_0();
 		NullCheck(L_0);
 		bool L_1;
-		L_1 = InterfaceFuncInvoker0< bool >::Invoke(3 /* System.Boolean UnityEngine.U2D.IPixelPerfectCamera::get_upscaleRT() */, IPixelPerfectCamera_t9F0A1326B7A342C5BDF45EB98760E0E380CEEAB7_il2cpp_TypeInfo_var, L_0);
+		L_1 = InterfaceFuncInvoker0< bool >::Invoke(6 /* System.Boolean UnityEngine.U2D.IPixelPerfectCamera::get_upscaleRT() */, IPixelPerfectCamera_t9F0A1326B7A342C5BDF45EB98760E0E380CEEAB7_il2cpp_TypeInfo_var, L_0);
 		if (!L_1)
 		{
 			goto IL_0037;
@@ -3036,7 +3084,7 @@ IL_006f:
 		RuntimeObject* L_16 = __this->get_m_Component_0();
 		NullCheck(L_16);
 		bool L_17;
-		L_17 = InterfaceFuncInvoker0< bool >::Invoke(3 /* System.Boolean UnityEngine.U2D.IPixelPerfectCamera::get_upscaleRT() */, IPixelPerfectCamera_t9F0A1326B7A342C5BDF45EB98760E0E380CEEAB7_il2cpp_TypeInfo_var, L_16);
+		L_17 = InterfaceFuncInvoker0< bool >::Invoke(6 /* System.Boolean UnityEngine.U2D.IPixelPerfectCamera::get_upscaleRT() */, IPixelPerfectCamera_t9F0A1326B7A342C5BDF45EB98760E0E380CEEAB7_il2cpp_TypeInfo_var, L_16);
 		if (L_17)
 		{
 			goto IL_00a8;
@@ -3046,7 +3094,7 @@ IL_006f:
 		RuntimeObject* L_18 = __this->get_m_Component_0();
 		NullCheck(L_18);
 		bool L_19;
-		L_19 = InterfaceFuncInvoker0< bool >::Invoke(4 /* System.Boolean UnityEngine.U2D.IPixelPerfectCamera::get_pixelSnapping() */, IPixelPerfectCamera_t9F0A1326B7A342C5BDF45EB98760E0E380CEEAB7_il2cpp_TypeInfo_var, L_18);
+		L_19 = InterfaceFuncInvoker0< bool >::Invoke(8 /* System.Boolean UnityEngine.U2D.IPixelPerfectCamera::get_pixelSnapping() */, IPixelPerfectCamera_t9F0A1326B7A342C5BDF45EB98760E0E380CEEAB7_il2cpp_TypeInfo_var, L_18);
 		if (L_19)
 		{
 			goto IL_00a8;

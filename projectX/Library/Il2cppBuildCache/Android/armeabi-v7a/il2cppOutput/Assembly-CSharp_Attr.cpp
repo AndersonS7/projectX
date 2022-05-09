@@ -32,6 +32,8 @@ struct SerializeField_t6B23EE6CC99B21C3EBD946352112832A70E67E25;
 struct SerializeReference_t83057B8E7EDCEB5FBB3C32C696FC0422BFFF3677;
 // System.String
 struct String_t;
+// UnityEngine.TooltipAttribute
+struct TooltipAttribute_t503A1598A4E68E91673758F50447D0EDFB95149B;
 
 
 
@@ -335,6 +337,25 @@ public:
 };
 
 
+// UnityEngine.TooltipAttribute
+struct TooltipAttribute_t503A1598A4E68E91673758F50447D0EDFB95149B  : public PropertyAttribute_t4A352471DF625C56C811E27AC86B7E1CE6444052
+{
+public:
+	// System.String UnityEngine.TooltipAttribute::tooltip
+	String_t* ___tooltip_0;
+
+public:
+	inline static int32_t get_offset_of_tooltip_0() { return static_cast<int32_t>(offsetof(TooltipAttribute_t503A1598A4E68E91673758F50447D0EDFB95149B, ___tooltip_0)); }
+	inline String_t* get_tooltip_0() const { return ___tooltip_0; }
+	inline String_t** get_address_of_tooltip_0() { return &___tooltip_0; }
+	inline void set_tooltip_0(String_t* value)
+	{
+		___tooltip_0 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___tooltip_0), (void*)value);
+	}
+};
+
+
 // System.Diagnostics.DebuggableAttribute/DebuggingModes
 struct DebuggingModes_t279D5B9C012ABA935887CB73C5A63A1F46AF08A8 
 {
@@ -388,6 +409,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebuggableAttribute__ctor_m7FF445C843549
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializeField__ctor_mDE6A7673BA2C1FAD03CFEC65C6D473CC37889DD3 (SerializeField_t6B23EE6CC99B21C3EBD946352112832A70E67E25 * __this, const RuntimeMethod* method);
 // System.Void UnityEngine.HideInInspector::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HideInInspector__ctor_mE2B7FB1D206A74BA583C7812CDB4EBDD83EB66F9 (HideInInspector_tDD5B9D3AD8D48C93E23FE6CA3ECDA5589D60CCDA * __this, const RuntimeMethod* method);
+// System.Void UnityEngine.TooltipAttribute::.ctor(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TooltipAttribute__ctor_m1839ACEC1560968A6D0EA55D7EB4535546588042 (TooltipAttribute_t503A1598A4E68E91673758F50447D0EDFB95149B * __this, String_t* ___tooltip0, const RuntimeMethod* method);
 // System.Void UnityEngine.CreateAssetMenuAttribute::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CreateAssetMenuAttribute__ctor_mF4754D0F74BACF7BB7DAC67F46690A69256D2D65 (CreateAssetMenuAttribute_t79F6BDD595B569A2D16681BDD571D1AE6E782D0C * __this, const RuntimeMethod* method);
 // System.Void UnityEngine.CreateAssetMenuAttribute::set_fileName(System.String)
@@ -440,6 +463,13 @@ static void GameControl_t8DAFC60E5E51F6D61D77F480B91691765270D43A_CustomAttribut
 	{
 		SerializeField_t6B23EE6CC99B21C3EBD946352112832A70E67E25 * tmp = (SerializeField_t6B23EE6CC99B21C3EBD946352112832A70E67E25 *)cache->attributes[0];
 		SerializeField__ctor_mDE6A7673BA2C1FAD03CFEC65C6D473CC37889DD3(tmp, NULL);
+	}
+}
+static void GameControl_t8DAFC60E5E51F6D61D77F480B91691765270D43A_CustomAttributesCacheGenerator_totalBarItems(CustomAttributesCache* cache)
+{
+	{
+		TooltipAttribute_t503A1598A4E68E91673758F50447D0EDFB95149B * tmp = (TooltipAttribute_t503A1598A4E68E91673758F50447D0EDFB95149B *)cache->attributes[0];
+		TooltipAttribute__ctor_m1839ACEC1560968A6D0EA55D7EB4535546588042(tmp, il2cpp_codegen_string_new_wrapper("\x43\x6F\x6E\x74\x72\x6F\x6C\x61\x20\x71\x75\x61\x6E\x74\x6F\x20\x74\x65\x6D\x70\x6F\x20\x6F\x20\x70\x6C\x61\x79\x65\x72\x20\x70\x72\x65\x63\x69\x73\x61\x20\x70\x65\x72\x63\x6F\x72\x72\x65\x72\x20\x70\x61\x72\x61\x20\x64\x65\x73\x62\x6C\x6F\x71\x75\x65\x61\x72\x20\x6F\x20\x69\x74\x65\x6D"), NULL);
 	}
 }
 static void ButtonControl_t847E1A2F6DD4F75019BB1EE19D9F379D4BFDA64F_CustomAttributesCacheGenerator_btnList(CustomAttributesCache* cache)
@@ -642,13 +672,14 @@ static void Wall_t75B0B5D0D103AF52A80C03FFB000620BD9005D4C_CustomAttributesCache
 	}
 }
 IL2CPP_EXTERN_C const CustomAttributesCacheGenerator g_AssemblyU2DCSharp_AttributeGenerators[];
-const CustomAttributesCacheGenerator g_AssemblyU2DCSharp_AttributeGenerators[32] = 
+const CustomAttributesCacheGenerator g_AssemblyU2DCSharp_AttributeGenerators[33] = 
 {
 	Data_t14E47C3ECEA81C6E00A0C71917C0E74F6F05DB14_CustomAttributesCacheGenerator,
 	FeedBackControl_t3CC99B6553FA3D43E7F77EEBD9B49E73F7CA4009_CustomAttributesCacheGenerator_feedbackTxt,
 	FeedBackControl_t3CC99B6553FA3D43E7F77EEBD9B49E73F7CA4009_CustomAttributesCacheGenerator_isActive,
 	GameControl_t8DAFC60E5E51F6D61D77F480B91691765270D43A_CustomAttributesCacheGenerator_countProgressTxt,
 	GameControl_t8DAFC60E5E51F6D61D77F480B91691765270D43A_CustomAttributesCacheGenerator_barProgressItems,
+	GameControl_t8DAFC60E5E51F6D61D77F480B91691765270D43A_CustomAttributesCacheGenerator_totalBarItems,
 	ButtonControl_t847E1A2F6DD4F75019BB1EE19D9F379D4BFDA64F_CustomAttributesCacheGenerator_btnList,
 	MenuControl_tD6B61EA950F8DF6E5A76C458AAA2E71D25654778_CustomAttributesCacheGenerator_panelGameOver,
 	Fuel_tEFC1BA77A2E72363161B01C3D32E3B63234C2E63_CustomAttributesCacheGenerator_points,

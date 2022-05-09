@@ -9,7 +9,7 @@ public class DetectColider : MonoBehaviour
     int ghost; //guarda os items que já foram sorteados
     void Awake()
     {
-        radius = (gameObject.transform.localScale.x / 2);
+        //radius = (gameObject.transform.localScale.x / 2);
         panelGameOver.SetActive(false);
     }
     void Update()

@@ -37,4 +37,9 @@ public class MenuControl : MonoBehaviour
             panelInfo.SetActive(false);
         }
     }
+
+    public void Dell()
+    {
+        PlayerPrefs.DeleteAll();
+    }
 }
