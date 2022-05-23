@@ -5331,7 +5331,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 202229561404705502}
-  - component: {fileID: 66180501}
+  - component: {fileID: 1549785029}
   m_Layer: 0
   m_Name: Stars
   m_TagString: Untagged
@@ -5355,7 +5355,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &66180501
+--- !u!114 &1549785029
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5367,7 +5367,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 381e7c6727dfdbf409cccb77cd59aea9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.25
+  speed: 0.3
 --- !u!1 &202229561438373644
 GameObject:
   m_ObjectHideFlags: 0

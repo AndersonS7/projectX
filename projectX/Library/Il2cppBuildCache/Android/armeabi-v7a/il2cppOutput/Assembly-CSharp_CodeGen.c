@@ -70,89 +70,93 @@ extern void MenuControl__ctor_m41FDDED87EF02E950C6268EA0AD453CA34825398 (void);
 extern void ValueControl_Start_mD963C5963DED4902A77CAE98B3C33D097B09541A (void);
 // 0x0000001D System.Void ValueControl::.ctor()
 extern void ValueControl__ctor_m12846F2AF3AC3855BE81E3367189552E4B12A0A6 (void);
-// 0x0000001E System.Void Fuel::Start()
+// 0x0000001E System.Void MoveBG::Update()
+extern void MoveBG_Update_mE569E6E333E16A0A5B5ADA87553C88E486306C62 (void);
+// 0x0000001F System.Void MoveBG::.ctor()
+extern void MoveBG__ctor_m5E92EC7EEFEA6350100228A412BCCE1DD465015F (void);
+// 0x00000020 System.Void Fuel::Start()
 extern void Fuel_Start_m7B58959DE30BAD9F942D1BB6314CEE5334A94B0D (void);
-// 0x0000001F System.Void Fuel::Update()
+// 0x00000021 System.Void Fuel::Update()
 extern void Fuel_Update_mE4E3DC0D246592C1ED2D49762C0BD20A602E21DF (void);
-// 0x00000020 System.Void Fuel::.ctor()
+// 0x00000022 System.Void Fuel::.ctor()
 extern void Fuel__ctor_m9B4CB065DCA2AE7BFA8FF8531CC5F4BF2DAD655B (void);
-// 0x00000021 System.Void FuelCollider::Start()
+// 0x00000023 System.Void FuelCollider::Start()
 extern void FuelCollider_Start_m4ADF46B3FD569601B3643AA90A63FBA55451A773 (void);
-// 0x00000022 System.Void FuelCollider::OnTriggerEnter2D(UnityEngine.Collider2D)
+// 0x00000024 System.Void FuelCollider::OnTriggerEnter2D(UnityEngine.Collider2D)
 extern void FuelCollider_OnTriggerEnter2D_mDFD7F47ABE15538DCEF5F17D5629188252637197 (void);
-// 0x00000023 System.Void FuelCollider::.ctor()
+// 0x00000025 System.Void FuelCollider::.ctor()
 extern void FuelCollider__ctor_m64C1DF630E271B7D675BD5B3E8609FDBB384FAFF (void);
-// 0x00000024 System.Single Scenary::get_TimeCountLimit()
+// 0x00000026 System.Single Scenary::get_TimeCountLimit()
 extern void Scenary_get_TimeCountLimit_m6F4D12F9214361BE88CF72B4926505A1718AAD57 (void);
-// 0x00000025 System.Void Scenary::set_TimeCountLimit(System.Single)
+// 0x00000027 System.Void Scenary::set_TimeCountLimit(System.Single)
 extern void Scenary_set_TimeCountLimit_m35ABA18D92ECCE01147DA0F07E43F38FD8242CD3 (void);
-// 0x00000026 System.Void Scenary::Start()
+// 0x00000028 System.Void Scenary::Start()
 extern void Scenary_Start_m64BE660026D8336C85A263F0FFD212BB43580D71 (void);
-// 0x00000027 System.Void Scenary::Update()
+// 0x00000029 System.Void Scenary::Update()
 extern void Scenary_Update_mF6FFC01FB34FE003422547034CD1F2186E869701 (void);
-// 0x00000028 System.Void Scenary::CreateWall(System.Collections.Generic.List`1<UnityEngine.Transform>,System.Int32)
+// 0x0000002A System.Void Scenary::CreateWall(System.Collections.Generic.List`1<UnityEngine.Transform>,System.Int32)
 extern void Scenary_CreateWall_mAC15F7A23038BBEFC822AB0184C4928056C663BE (void);
-// 0x00000029 UnityEngine.GameObject Scenary::ModifyObj(UnityEngine.GameObject,System.Int32,System.Int32)
+// 0x0000002B UnityEngine.GameObject Scenary::ModifyObj(UnityEngine.GameObject,System.Int32,System.Int32)
 extern void Scenary_ModifyObj_mF740BBAE19B62F31D5A2FA21B22FDD83CFCEC888 (void);
-// 0x0000002A System.Void Scenary::.ctor()
+// 0x0000002C System.Void Scenary::.ctor()
 extern void Scenary__ctor_mE7D2288A9F481217649F607D1A9854A25AF300C8 (void);
-// 0x0000002B System.Void GetData::UpdateInfo(System.Int32)
+// 0x0000002D System.Void GetData::UpdateInfo(System.Int32)
 extern void GetData_UpdateInfo_mDE386548CFE2648E13D230327398255C80CD92BD (void);
-// 0x0000002C System.Void GetData::.ctor()
+// 0x0000002E System.Void GetData::.ctor()
 extern void GetData__ctor_mA7B015A010D0DEA8FCAB1C681762DC70FA6A745A (void);
-// 0x0000002D System.Void SaveIndex::SaveIndexInfo(System.Int32)
+// 0x0000002F System.Void SaveIndex::SaveIndexInfo(System.Int32)
 extern void SaveIndex_SaveIndexInfo_m8D2E85A32EF62DA3DF3BAD0B82ABEA4C5DD94901 (void);
-// 0x0000002E System.Void SaveIndex::.ctor()
+// 0x00000030 System.Void SaveIndex::.ctor()
 extern void SaveIndex__ctor_mACA6DD729BBEA1BB91F7310710B1D23A883F27EA (void);
-// 0x0000002F System.Void Data::.ctor()
+// 0x00000031 System.Void Data::.ctor()
 extern void Data__ctor_m7CB7DB28E1ADF23A472A1CF3780E2A8252444E91 (void);
-// 0x00000030 System.Void GameData::.ctor(ButtonControl)
+// 0x00000032 System.Void GameData::.ctor(ButtonControl)
 extern void GameData__ctor_mF35B16E2ACF502E4E4F0CD171199E13DE40B08F5 (void);
-// 0x00000031 System.Void SaveSystem::SaveGame(ButtonControl)
+// 0x00000033 System.Void SaveSystem::SaveGame(ButtonControl)
 extern void SaveSystem_SaveGame_m6F2463328B31B318BAD89DA7C19C7F0CA95C924E (void);
-// 0x00000032 GameData SaveSystem::LoadGame()
+// 0x00000034 GameData SaveSystem::LoadGame()
 extern void SaveSystem_LoadGame_m4E6D3F57C2D46E749C1DF4CD3169BF22FB70C137 (void);
-// 0x00000033 System.Void DetectColider::Awake()
+// 0x00000035 System.Void DetectColider::Awake()
 extern void DetectColider_Awake_m1FEE229D1655227AD5DD51F30F73E14FE4AD9B6C (void);
-// 0x00000034 System.Void DetectColider::Update()
+// 0x00000036 System.Void DetectColider::Update()
 extern void DetectColider_Update_m751B175712EBB25890FC1B6A857F8DF89289BA44 (void);
-// 0x00000035 System.Void DetectColider::Detect()
+// 0x00000037 System.Void DetectColider::Detect()
 extern void DetectColider_Detect_m3D53E3420B41D85899AB4A74618285E677594CBB (void);
-// 0x00000036 System.Void DetectColider::OnDrawGizmosSelected()
+// 0x00000038 System.Void DetectColider::OnDrawGizmosSelected()
 extern void DetectColider_OnDrawGizmosSelected_mF84B3CF378582A8CADFC6B9E04D4877B62BA4E1F (void);
-// 0x00000037 System.Void DetectColider::.ctor()
+// 0x00000039 System.Void DetectColider::.ctor()
 extern void DetectColider__ctor_mF472BE96119F926014EE7EA1E07A8DD6888C5903 (void);
-// 0x00000038 System.Void FuelText::Start()
+// 0x0000003A System.Void FuelText::Start()
 extern void FuelText_Start_m2A8279765D4AA4ED90B4EBEF194FDE1DFBF5CA4A (void);
-// 0x00000039 System.Void FuelText::Update()
+// 0x0000003B System.Void FuelText::Update()
 extern void FuelText_Update_m67F4E25DEEC7AA3351201D9B29EF470102B09632 (void);
-// 0x0000003A System.Void FuelText::.ctor()
+// 0x0000003C System.Void FuelText::.ctor()
 extern void FuelText__ctor_mE78C3D6B8ED9D02E479BE66E1E70B468A79F0A7F (void);
-// 0x0000003B System.Void Player::Start()
+// 0x0000003D System.Void Player::Start()
 extern void Player_Start_mBD692B64AAC791B93A589E7D3596F36787EAF021 (void);
-// 0x0000003C System.Void Player::Update()
+// 0x0000003E System.Void Player::Update()
 extern void Player_Update_mBA04F1D6FE3C18037EA95DFAEEAA9977BFD49CD3 (void);
-// 0x0000003D System.Void Player::FixedUpdate()
+// 0x0000003F System.Void Player::FixedUpdate()
 extern void Player_FixedUpdate_mD7447EDFC86F29A3E5FBDEF7E0139535BD4C5088 (void);
-// 0x0000003E System.Void Player::Inputs()
+// 0x00000040 System.Void Player::Inputs()
 extern void Player_Inputs_m840C46EB1B43CC3AA939BC40B1D039568A1668A9 (void);
-// 0x0000003F System.Void Player::Jump()
+// 0x00000041 System.Void Player::Jump()
 extern void Player_Jump_m741715891EE6DEC1EC5F6A7233B6395ABD0E272C (void);
-// 0x00000040 System.Void Player::DecrementFuel()
+// 0x00000042 System.Void Player::DecrementFuel()
 extern void Player_DecrementFuel_m278184FEFEA457EA41E95E0BBA9FA5651247EECF (void);
-// 0x00000041 System.Void Player::AddFuel(System.Int32)
+// 0x00000043 System.Void Player::AddFuel(System.Int32)
 extern void Player_AddFuel_m9A2F8E5C92182739E131243D0C4E73A9E1839D87 (void);
-// 0x00000042 System.Void Player::.ctor()
+// 0x00000044 System.Void Player::.ctor()
 extern void Player__ctor_mDE8EB5B351975D4E7E24DE341B8B49B8A29CC2B7 (void);
-// 0x00000043 System.Void Wall::Update()
+// 0x00000045 System.Void Wall::Update()
 extern void Wall_Update_mF5C141797F100C1216B0A21F9ABEDDF2E07C4015 (void);
-// 0x00000044 System.Void Wall::ToMove()
+// 0x00000046 System.Void Wall::ToMove()
 extern void Wall_ToMove_mD8E65A77E93301CB33D08ED9ED634CE197428F1F (void);
-// 0x00000045 System.Void Wall::OnTriggerEnter2D(UnityEngine.Collider2D)
+// 0x00000047 System.Void Wall::OnTriggerEnter2D(UnityEngine.Collider2D)
 extern void Wall_OnTriggerEnter2D_mFA9E20B48DDBC281FDADD170E4B0AB4C83814254 (void);
-// 0x00000046 System.Void Wall::.ctor()
+// 0x00000048 System.Void Wall::.ctor()
 extern void Wall__ctor_m90F1D5997556A6DA8EEE00148EA781E96718A763 (void);
-static Il2CppMethodPointer s_methodPointers[70] = 
+static Il2CppMethodPointer s_methodPointers[72] = 
 {
 	FeedBackControl_Start_m5A1A49FA12BDCC48F4DC3F1F43526983307EC188,
 	FeedBackControl_Update_m71DF64AD9898776BCF542206DEF73C64A43234CD,
@@ -183,6 +187,8 @@ static Il2CppMethodPointer s_methodPointers[70] =
 	MenuControl__ctor_m41FDDED87EF02E950C6268EA0AD453CA34825398,
 	ValueControl_Start_mD963C5963DED4902A77CAE98B3C33D097B09541A,
 	ValueControl__ctor_m12846F2AF3AC3855BE81E3367189552E4B12A0A6,
+	MoveBG_Update_mE569E6E333E16A0A5B5ADA87553C88E486306C62,
+	MoveBG__ctor_m5E92EC7EEFEA6350100228A412BCCE1DD465015F,
 	Fuel_Start_m7B58959DE30BAD9F942D1BB6314CEE5334A94B0D,
 	Fuel_Update_mE4E3DC0D246592C1ED2D49762C0BD20A602E21DF,
 	Fuel__ctor_m9B4CB065DCA2AE7BFA8FF8531CC5F4BF2DAD655B,
@@ -225,7 +231,7 @@ static Il2CppMethodPointer s_methodPointers[70] =
 	Wall_OnTriggerEnter2D_mFA9E20B48DDBC281FDADD170E4B0AB4C83814254,
 	Wall__ctor_m90F1D5997556A6DA8EEE00148EA781E96718A763,
 };
-static const int32_t s_InvokerIndices[70] = 
+static const int32_t s_InvokerIndices[72] = 
 {
 	1127,
 	1127,
@@ -252,6 +258,8 @@ static const int32_t s_InvokerIndices[70] =
 	1127,
 	966,
 	966,
+	1127,
+	1127,
 	1127,
 	1127,
 	1127,
@@ -303,7 +311,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	70,
+	72,
 	s_methodPointers,
 	0,
 	NULL,

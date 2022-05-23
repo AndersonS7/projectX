@@ -17,4 +17,4 @@ MonoBehaviour:
   description: "O lobo \xE9 uma esp\xE9cie de mam\xEDfero can\xEDdeo do g\xEAnero
     Canis. \xC9 um sobrevivente da Era do Gelo, origin\xE1rio do Pleistoceno Superior,
     cerca de 300 mil anos atr\xE1s."
-  image: {fileID: 21300000, guid: 6462863b42624f545a60bb7aff7c2cf6, type: 3}
+  image: {fileID: 21300000, guid: 96825f87f343fc04fbfc75d9e0fe781f, type: 3}

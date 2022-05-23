@@ -6,6 +6,8 @@ TagManager:
   tags:
   - End
   - Btn
+  - Wall
+  - EndStars
   layers:
   - Default
   - TransparentFX

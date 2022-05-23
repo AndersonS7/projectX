@@ -12,9 +12,26 @@ public class DetectColider : MonoBehaviour
         //radius = (gameObject.transform.localScale.x / 2);
         panelGameOver.SetActive(false);
     }
-    void Update()
+    //void Update()
+    //{
+    //    //Detect();
+    //}
+
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        Detect();
+        if (collision.collider.CompareTag("Wall"))
+        {
+            int aux1 = PlayerPrefs.GetInt("totalItens");
+            int aux2 = PlayerPrefs.GetInt("ghostItems");
+            ghost = aux1 + aux2;
+
+            PlayerPrefs.SetInt("ghostItems", ghost);
+            PlayerPrefs.Save();
+
+            panelGameOver.SetActive(true);
+            Time.timeScale = 0;
+            Destroy(gameObject);
+        }
     }
     private void Detect()
     {
@@ -34,6 +51,7 @@ public class DetectColider : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
     private void OnDrawGizmosSelected()
     {
         Gizmos.DrawWireSphere(transform.position, radius);

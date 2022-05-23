@@ -16,4 +16,4 @@ MonoBehaviour:
   statusClass: COMUM
   description: "Gado-bovino-dom\xE9stico \xE9 uma esp\xE9cie de bovino do g\xEAnero
     Bos e da ordem Artiodactyla."
-  image: {fileID: 21300000, guid: a26e69f89e2193342818b38195e29656, type: 3}
+  image: {fileID: 21300000, guid: 0602eecc8da293048aaecced9ed2704a, type: 3}

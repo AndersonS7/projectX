@@ -11,6 +11,7 @@ ScriptsOnlyBuild:
     - GameControl
     - GetData
     - MenuControl
+    - MoveBG
     - Player
     - SaveIndex
     - Scenary
@@ -20,7 +21,6 @@ ScriptsOnlyBuild:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
-    - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.PixelPerfect.dll:
     - UnityEngine.U2D.PixelPerfectCamera
     Unity.2D.Tilemap.Editor.dll:
@@ -102,11 +102,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4730}
     - Class: 114
-      Script: {instanceID: 4944}
+      Script: {instanceID: 4946}
     - Class: 114
-      Script: {instanceID: 5364}
+      Script: {instanceID: 5366}
     - Class: 114
-      Script: {instanceID: 6040}
+      Script: {instanceID: 6042}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -232,11 +232,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3780}
     - Class: 114
-      Script: {instanceID: 5356}
+      Script: {instanceID: 4752}
     - Class: 114
-      Script: {instanceID: 6100}
+      Script: {instanceID: 5358}
     - Class: 114
-      Script: {instanceID: 6172}
+      Script: {instanceID: 6102}
+    - Class: 114
+      Script: {instanceID: 6174}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -908,6 +910,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Mask
+  - hash:
+      serializedVersion: 2
+      Hash: afc5b93a7b192de2dcb3832fe35a5c7e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MoveBG
   - hash:
       serializedVersion: 2
       Hash: 523ce309f50d9eee6a8fc0e2f86c9c97
